@@ -1,0 +1,3 @@
+I, [2020-02-12T09:21:15.337531 #96486]  INFO -- Kitchen: -----> Starting Kitchen (v1.23.2)
+I, [2020-02-12T09:21:18.871491 #96486]  INFO -- Kitchen: -----> Destroying <chef-14-centos-7>...
+I, [2020-02-12T09:21:23.624898 #96486]  INFO -- Kitchen: -----> Kitchen is finished. (0m8.29s)

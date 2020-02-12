@@ -1,0 +1,112 @@
+{
+  "revision_id": "d788b2893ae92e1b5be880db960fcb864614e7677fdeded4ab42ac34f4e15ab5",
+  "name": "base_policy_cb",
+  "run_list": [
+    "recipe[base_policy_cb::default]",
+    "recipe[audit_wrapper::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "audit": {
+      "version": "9.0.1",
+      "identifier": "b06bd8d14e8bb33744ae0e48e6934683856ee52b",
+      "dotted_decimal_identifier": "49658174869769139.15556638073742995.77530693297451",
+      "cache_key": "audit-9.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/9.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/9.0.1/download",
+        "version": "9.0.1"
+      }
+    },
+    "audit_wrapper": {
+      "version": "1.0.5",
+      "identifier": "d5a7bfe33c2b8c193e6082221cf21502d8e07024",
+      "dotted_decimal_identifier": "60138612632333196.7105458638822642.23101972705316",
+      "cache_key": "audit_wrapper-1.0.5",
+      "origin": "https://api.chef.io/organizations/hep_chiao",
+      "source_options": {
+        "chef_server": "https://api.chef.io/organizations/hep_chiao",
+        "version": "1.0.5"
+      }
+    },
+    "base_policy_cb": {
+      "version": "1.0.5",
+      "identifier": "548763f8ff49cb8da06359b07857bd9ff58f752d",
+      "dotted_decimal_identifier": "23792761492687307.39864320283146327.208494717269293",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:hchiao1/cookbook_policyfile_example.git",
+        "revision": "5e7b5afea00c946c7f6ad4a5e2263b27834bc224",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
+    "chrony": {
+      "version": "2.0.0",
+      "identifier": "958d695e198e87f06b3b137e44eaeac237215e2b",
+      "dotted_decimal_identifier": "42095255219703431.67671895884842218.258119869488683",
+      "cache_key": "chrony-2.0.0",
+      "origin": "https://api.chef.io/organizations/hep_chiao",
+      "source_options": {
+        "chef_server": "https://api.chef.io/organizations/hep_chiao",
+        "version": "2.0.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "audit",
+        "= 9.0.1"
+      ],
+      [
+        "audit_wrapper",
+        "= 1.0.5"
+      ],
+      [
+        "base_policy_cb",
+        ">= 0.0.0"
+      ],
+      [
+        "chrony",
+        "= 2.0.0"
+      ]
+    ],
+    "dependencies": {
+      "audit (9.0.1)": [
+
+      ],
+      "audit_wrapper (1.0.5)": [
+        [
+          "audit",
+          ">= 0.0.0"
+        ]
+      ],
+      "base_policy_cb (1.0.5)": [
+        [
+          "chrony",
+          ">= 0.0.0"
+        ]
+      ],
+      "chrony (2.0.0)": [
+
+      ]
+    }
+  }
+}
